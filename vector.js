@@ -11,12 +11,6 @@ Vector.prototype.clone = function() {
 	return new Vector(this.x, this.y);
 };
 
-Vector.prototype.copy = function(vector) {
-	this.x = vector.x;
-	this.y = vector.y;
-	return this;
-};
-
 Vector.prototype.distance = function(vector) {
 	return Math.sqrt(Math.pow(this.x - vector.x, 2) + Math.pow(this.y - vector.y, 2));
 };
